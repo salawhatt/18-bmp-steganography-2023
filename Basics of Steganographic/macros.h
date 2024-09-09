@@ -1,0 +1,92 @@
+#pragma once
+#define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable : 4996)
+#pragma warning( disable : 4244 ) 
+#include <windows.h>
+#include <wchar.h>
+#include <iostream>
+#include <conio.h>
+#include <cstdlib>
+#include <cmath>
+#include <stdlib.h>
+
+using namespace std;
+
+#define BMP_SYSTEM_PART 54
+#define FILE_SIZE_LENGTH_IN_BYTES 10
+#define MAXIMUM_FILE_PATH_LENGTH 260
+#define LINE_LENGTH_FOR_COMPRESSION_RATE 2
+#define LINE_LENGTH_FOR_FORMAT_FILE 2
+#define KEY_LENGTH_STAGE_ONE 9
+#define KEY_LENGTH 20 
+#define SYMBOL_FILLING_BLANK_CELLS 'f'
+
+#define MODE_GET_COMPRESSION_RATE 1
+#define GET_PATH_TO_FILE_FOR_STORING_ENCRYPTION 2
+#define MODE_GET_KEY_ENCRYPTION 3
+#define MODE_GET_KEY_DECRYPTION 4
+#define GET_PATH_TO_FILE_FOR_ENCRYPTION 5
+#define GET_PATH_TO_FILE_FOR_COPY 6
+
+#define ERROR_INVALID_INPUT -1
+#define ERROR_FILE_NOT_OPEN -2
+#define ERROR_FILE_NOT_BMP -3
+#define ERROR_BLANK_FIELD -4
+#define ERROR_WRONG_KEY_INPUT -5
+#define ERROR_FILE_TOO_LARGEE -6
+#define UNACCEPTABLE_COMPRESSION_RATE -7
+#define ERROR_FILE_NOT_CREATED -8
+#define NO_ERRORS 1
+#define BACK_TO_MENU 0
+
+//размеры полей
+#define FIELD_WIDTH 70
+#define FIELD_HEIGHT_MENU 12
+#define FIELD_HEIGHT_POINTS 4
+
+//общие положения курсора
+#define CURSOR_POSITION_FOR_NOTIFICATIONS_Y 25
+#define POINT_HOME_X_AXIS 24
+#define POINT_HOME_Y_AXIS 4
+#define HIDDEN_POINT_POSITION 0
+#define POINT_STEP 2
+#define CURSOR_POSITION_FOR_WARNING 5
+
+#define POSITION_NOTIFICATION_LOADING_X 41
+#define POSITION_NOTIFICATION_LOADING_Y 17
+#define NOTIFICATION_POSITION_LOAD_PERCENTAGE_X 51
+#define NOTIFICATION_POSITION_LOAD_PERCENTAGE_Y 17
+#define FIRST_BORDER_LOADING_X 2
+#define SECOND_BORDER_LOADING_X 103
+#define INITIAL_LOAD_POSITION_X 3
+#define BORDER_LOADING_Y 18
+#define ONE_HUNDRED_PERCENT 100
+
+//конфигурация полей для меню
+#define TYPE_MAIN_MENU 'm'
+#define MAXIMUM_POSITION_POINT_Y_AXIS_MENU 10
+
+//конфигурация полей для пункта 4
+#define TYPE_POINT_4 '4'
+#define MAXIMUM_POSITION_POINT_Y_POINT_4 22
+
+#define TYPE_ENCRYPT 'e'
+#define TYPE_ENCRYPT_1 '1'
+#define TYPE_ENCRYPT_2  '2'
+#define TYPE_ENCRYPT_3  '3'
+#define TYPE_ENCRYPT_3_5 '8'
+#define TYPE_ENCRYPT_4  '4'
+#define TYPE_ENCRYPT_5  '5'
+#define TYPE_DECRYPTION_1 '6'
+#define TYPE_DECRYPTION_2 '7'
+#define TYPE_DECRYPTION_3 '9'
+
+//кнопки
+#define ENTER_BUTTON 13
+#define BUTTON_DOWN 80
+#define BUTTON_UP 72
+
+#define MULTIPLIER_FOR_LСG 5
+#define INCREMENT_FOR_LCG 3
+#define MODULE_FOR_LCG 33554432
+#define BIT_IN_CHARACTER 8
